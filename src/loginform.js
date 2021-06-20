@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
-//import React from 'react'
 
-export const LoginForm = () => {
+import React, {useState} from 'react' ;
+//import loginpic from "./images/login.svg";
+
+    const LoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setpassword] = useState("");
 
@@ -21,6 +22,7 @@ export const LoginForm = () => {
     return (
         <>
             <form action=""  onSubmit={submitForm}>
+            
                 <div>
                     <label htmlfor="email">Email</label>
                       <input type="text" name="email" id="email" autoComplete="off"

@@ -1,6 +1,7 @@
 import React from 'react'
+//import Signup from "../images/signup.svg";
 
-export const Signup = () => {
+    const signup = () => {
     return (
         <>
             <section className="signup">
@@ -21,7 +22,7 @@ export const Signup = () => {
                                     <label htmlFor="email">
                                         <i className="zmdi zmdi-email material-icons-name"></i>
                                     </label>
-                                    <input type="email" name="email" id="email" autoComplete="off" placeholder="Your Name" />
+                                    <input type="email" name="email" id="email" autoComplete="off" placeholder="Your Email" />
                                 </div>
 
                                 <div className="form-group">
@@ -31,11 +32,38 @@ export const Signup = () => {
                                     <input type="number" name="phone" id="name" autoComplete="off" placeholder="Your Phone Number" />
                                 </div>
 
+                                <div className="gender">
                                 <div className="form-group">
+                                    <label htmlFor="Male">
+                                        <i className="zmdi zmdi-circle material-icons-name"></i>
+                                    </label>
+                                    <input type="radio" name="gender" id="gender" value="male" autoComplete="off" placeholder="Your gender" /><br/>
+                                    <label htmlFor="Female">
+                                        <i className="zmdi zmdi-circle material-icons-name"></i>
+                                    </label>
+                                    <input type="radio" name="gender" id="gender" value="female" autoComplete="off" placeholder="Your gender" />
+                                </div>
+                                </div>
+
+                                {/* <div className="form-group">
                                     <label htmlFor="work">
                                         <i className="zmdi zmdi-slideshow material-icons-name"></i>
                                     </label>
                                     <input type="text" name="work" id="name" autoComplete="off" placeholder="Your profession" />
+                                </div> */}
+
+                                <div className="form-group">
+                                    <label htmlFor="College">
+                                        <i className="zmdi zmdi-slideshow material-icons-name"></i>
+                                    </label>
+                                    <input type="text" name="College" id="name" autoComplete="off" placeholder="Your College Name" />
+                                </div>
+
+                                <div className="form-group">
+                                    <label htmlFor="city">
+                                        <i className="zmdi zmdi-slideshow material-icons-name"></i>
+                                    </label>
+                                    <input type="text" name="city" id="name" autoComplete="off" placeholder="Your city" />
                                 </div>
 
                                 <div className="form-group">
@@ -81,4 +109,4 @@ export const Signup = () => {
     )
 }
 
-export default Signup;
+export default signup;
