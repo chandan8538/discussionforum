@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from './Home';
 import About from './About';
+//import Navbar from "./Navbar";
+
 import Header from './Header';
 //import Contact from './Contact';
 import Footer from "./Footer";
-import LoginForm  from "./loginform";
+import Login  from "./login";
 import Signup from './Signup';
 
 class App extends React.Component {
@@ -19,18 +21,19 @@ class App extends React.Component {
       <div className="container">
           <div className="row">
               <Header/>
+              {/* <Navbar /> */}
           </div>
 
           <div className="row">
             <div className="col-9">
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/loginform" component={Home} />
                 <Route exact path="/about" component={About} />
                 {/* <Route exact path="/contact" component={Contact} />
                 <Route exact path="/services" component={Contact} />
                 <Route exact path="/faq" component={Contact} /> */}
                 <Route exact path="/signup" component={Signup} />
-                <Route exact path="/loginform" component={LoginForm} />
+                <Route exact path="/" component={Login} />
               </Switch>
             </div>
 

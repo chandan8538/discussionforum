@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 
 const Header = () => {
-    const nameTemp="Deepak";
-    const ageTemp=30;
+    const nameTemp="Chandan";
+    const ageTemp=25;
     // const testClick = () => {
     //     console.log("Clicked...");
     // }
