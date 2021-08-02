@@ -4,7 +4,7 @@ export default function Footer() {
     let footerStyle = {
         position: "relative",
         top: "70vh",
-        width: "100%",
+        width: "2000%",
         border: "2px solid red"
     }
     return (

@@ -8,9 +8,12 @@ import About from './About';
 
 import Header from './Header';
 //import Contact from './Contact';
+import AddPost from './AddPost';
+import EditPost from './EditPost';
 import Footer from "./Footer";
 import Login  from "./login";
 import Signup from './Signup';
+//import login from './login';
 
 class App extends React.Component {
 
@@ -29,6 +32,9 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/loginform" component={Home} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/addpost" component={AddPost} />
+                <Route exact path="/EditPost" component={EditPost} />
+
                 {/* <Route exact path="/contact" component={Contact} />
                 <Route exact path="/services" component={Contact} />
                 <Route exact path="/faq" component={Contact} /> */}
